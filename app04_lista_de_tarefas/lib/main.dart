@@ -52,6 +52,9 @@ class _HomeState extends State<Home> {
   Future<File> _saveData() async {
     String data = json.encode(_todoList);
     final file = await _getFile();
+
+    debugPrint(data);
+
     return file.writeAsString(data);
   }
 

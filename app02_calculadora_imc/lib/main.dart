@@ -38,14 +38,14 @@ class _HomeState extends State<Home> {
       if (imc < 18.6) {
         msg = "Abaixo do peso";
       } else if (imc < 24.9) {
-        msg = "Peso idel";
+        msg = "Peso ideal";
       } else if (imc < 29.9) {
         msg = "Levemente acima do peso";
       } else if (imc < 34.9) {
         msg = "Obesidade grau I";
       } else if (imc < 39.9) {
         msg = "Obesidade grau II";
-      } else if (imc >= 40) {
+      } else {
         msg = "Obesidade grau III";
       }
 
